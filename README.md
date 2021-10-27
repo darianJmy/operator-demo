@@ -226,6 +226,7 @@ make install
 ### 构建代码变成镜像
 
 ```
+#这里需要注意我们新增了一个 resources 文件夹也要在 dockerfile 中体现出来
 docker build -f Dockerfile . -t operator-demo:v0.0.1
 ```
 
