@@ -14,7 +14,7 @@ brew install operator-sdk
 ```
 
 ### Workflow
-#Operator SDK 流程总结为6大部分
+Operator SDK 流程总结为6大部分
 
 * 1、创建 operator 项目文件夹并且进入
 * 2、初始化项目
