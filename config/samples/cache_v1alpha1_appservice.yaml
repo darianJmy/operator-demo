@@ -1,0 +1,7 @@
+apiVersion: cache.github.com/v1alpha1
+kind: AppService
+metadata:
+  name: appservice-sample
+spec:
+  # Add fields here
+  foo: bar
