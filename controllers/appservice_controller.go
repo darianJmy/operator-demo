@@ -56,11 +56,6 @@ func (r *AppServiceReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) 
 		return ctrl.Result{}, err
 	}
 
-	if instance.DeletionTimestamp != nil {
-		Logger.Error(err, "failed to get deletiontimestamp from instance")
-		return ctrl.Result{}, err
-	}
-
 	deploy := &appsv1.Deployment{}
 	if err := r.Get(context.TODO(), req.NamespacedName, deploy); err != nil && errors.IsNotFound(err) {
 		deploy := resources.NewDeploy(instance)
